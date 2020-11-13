@@ -15,16 +15,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ExercicioAula.c">
+    <ClCompile Include="carateresEmC.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="funcoes.c">
+    <ClCompile Include="contarLetrasNumeros.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="meu.h">
+    <ClCompile Include="math.c">
       <Filter>Source Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

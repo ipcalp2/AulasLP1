@@ -30,6 +30,16 @@ int main() {
     printf(" %d * %d == %d\n", x,y,calculaProduto(x,y));
     printf(" %d + %d == %d\n", x,y,calculaSoma(x,y));
 
+    printf("%s\n", numeroExtenso(1));
+   
+    //Analisar
+    //char ch = 0;   
+    //while (ch != '\r')  //13
+    //{
+    //    ch = getch();
+    //    if (ch!='\r') putchar('*');
+    //}
+
 
     system("pause");
     

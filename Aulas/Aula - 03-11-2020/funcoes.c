@@ -88,4 +88,19 @@ int maiorValor(int x,int y ){
     
 }
 
+
+char* numeroExtenso(int num) {
+    char* valor;
+
+    switch (num) {
+    case 1:
+        valor = "Um";
+        break;
+    case 2:
+        valor = "Dois";
+        break;
+    default:
+        valor = "UPS";
+    }
+}
 #pragma endregion
