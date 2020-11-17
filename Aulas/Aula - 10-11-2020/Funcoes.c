@@ -30,3 +30,13 @@ int dobro(int x) {
 int soma(int x, int y, int z) {
     return (x + y + z);
 }
+
+char* diaSemanaExtenso(diaSemana d) {
+
+    switch (d) {
+    case SEG: return ("Segunda");
+    case TER: return ("Terça");
+    default: return("Dia Inválido");
+    }
+
+}
