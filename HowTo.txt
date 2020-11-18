@@ -2,6 +2,6 @@
 Carregar material do Repositório
 
 
-1) git remote add origin https://github.com/luferIPCA/PI.git
+1) git remote add origin https://github.com/luferIPCA/LP1.git
 2) git fetch
 3) git pull

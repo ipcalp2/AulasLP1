@@ -19,33 +19,6 @@
 */
 
 /**
- * \brief Função que apresenta os valores numéricos entre dois limites
- * 
- * \param inico
- * \param fim
- */
-void mostraTudo(int inicio, int fim) {
-    for (int i = inicio; i <= fim; i++) {
-        printf("%d\n", i);
-    }
-}
-
-/**
- * \brief Função que apresenta apenas os valores numéricos ímpares entre dois limites
- * 
- * \param inicio
- * \param fim
- */
-void mostraImpares(int inicio, int fim) {
-
-    for (int i = inicio; i <= fim; i++) 
-    {
-        if (i%2!=0)
-            printf("%d\n", i);
-    }
-}
-
-/**
  * \brief Função que conta os valores pares entre dois limites
  * 
  * \param lInf
@@ -64,18 +37,35 @@ int contaPares(int lInf, int lSup) {
     return(conta);
 }
 
+#pragma region FUNCOES_INTERACAO
+
+/**
+ * \brief Função que apresenta apenas os valores numéricos ímpares entre dois limites
+ *
+ * \param inicio
+ * \param fim
+ */
+void mostraImpares(int inicio, int fim) {
+
+    for (int i = inicio; i <= fim; i++)
+    {
+        if (i % 2 != 0)
+            printf("%d\n", i);
+    }
+}
+
 /**
  * Função para ler uma password de N caracteres
- * 
+ *
  * \param maxChars
- * \return 
+ * \return
  */
 char* lePassword(int maxChars) {
     char* pass = (char*)malloc(sizeof(char) * maxChars);
     char op;
     int i = 0;
 
-    while (((op = getch()) != '\r') && (i< maxChars)) {
+    while (((op = getch()) != '\r') && (i < maxChars)) {
         putchar('*');
         //*(pass+i) = op;
         //i++;
@@ -84,6 +74,49 @@ char* lePassword(int maxChars) {
     pass[i] = '\0';
     return pass;
 }
+
+/**
+ * \brief Função que apresenta os valores numéricos entre dois limites
+ *
+ * \param inico
+ * \param fim
+ */
+void mostraTudo(int inicio, int fim) {
+    for (int i = inicio; i <= fim; i++) {
+        printf("%d\n", i);
+    }
+}
+
+/**
+ * Apresenta um conjunto de opções de menu.
+ * 
+ */
+void menu() {
+    puts("[0] - Sair");
+    puts("[1] - Mostra Todos os valores");
+    puts("[2] - Mostra apenas ímpares");
+    puts("[3] - Conta valores pares");
+    puts("[4] - Ler password");
+}
+
+/**
+ * Ler um caracter validado
+ * 
+ * \param inf
+ * \param sup
+ * \return 
+ */
+char leOpcao(char inf, char sup) {
+    char op = '0';
+    //while (((op = getch()) < inf) || (op > sup));
+
+    while (op < inf || op>sup) {
+        op = getche();
+
+    }
+    return op;
+}
+#pragma endregion
 
 #pragma region getchLINUX
 ///* reads from keypress, echoes */

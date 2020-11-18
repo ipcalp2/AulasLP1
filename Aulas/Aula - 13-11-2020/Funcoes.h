@@ -1,11 +1,14 @@
 /*****************************************************************//**
  * \file   Funcoes.h
- * \brief  Declaaração de assinaturas de funções
+ * \brief  Declaração de assinaturas de funções
  * 
  * \author lufer
  * \date   November 2020
  *********************************************************************/
-#pragma once
+//#pragma once
+
+#ifndef A
+#define A
 
 #include "Tipos.h"
 
@@ -17,5 +20,10 @@ extern void mostraTudo(int i, int f);
 
 extern char* diaSemanaExtenso(diaSemana d);
 
+extern void menu();
+extern char leOpcao(char inf, char sup);
+
 //Extra
 char* lePassword(int maxChars);
+
+#endif
