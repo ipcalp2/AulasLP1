@@ -26,7 +26,7 @@ int main(void) {
 
 	int aux = changeValues(&x, &y);
 	incValue(&aux);
-	printf("Endereço de aux=%p - Valor de aux= %d \n", (void*)&aux, aux);
+	printf("Endereço de aux=%p - Valor de aux= %d \n", &aux, aux);
 	//Analisar
 	//incValue(aux);
 
