@@ -1,6 +1,7 @@
 
 #include <stdio.h>
-#include "c:\temp\libs\framework.h"
+#include "framework.h"
+//#include "c:\temp\libs\framework.h"
 
 void main(void) 
 {
