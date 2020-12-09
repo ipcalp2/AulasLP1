@@ -6,10 +6,14 @@
 #pragma warning (disable: 4996);
 
 typedef enum {False, True} boolean;
+#define true True
+#define false False
 
 void mostraArray(int n[], int nElementos);	//asssinatura
 boolean getValues(int v[], int nElementos);
 void alteraArray(int v[], int n);
+
+int* getArray(int v[], int s);
 
 int main(void) {
 
@@ -160,6 +164,25 @@ int* getOddNumbers(int v[], int n) {
 		if (v[i] % 2 == 0) aux[j++] = v[i];
 	}
 	return aux;
+}
+
+
+
+int* getArray(int v[], int s) {
+
+	//int aux[s];
+	int* aux = (int*)malloc(sizeof(int) * s);
+
+}
+
+boolean getArrayII(const int v[], const int s, int *out)
+{
+	if (s < 0) return false;
+	for (int i = 0; i < s; i++)
+	{
+		out[i] = v[i];
+	}
+	return true;
 }
 
 //Ordenar um array!!!

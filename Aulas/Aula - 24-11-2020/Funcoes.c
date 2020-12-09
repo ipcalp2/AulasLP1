@@ -26,7 +26,7 @@ int changeValues(int* x, int* y) {
 }
 
 /**
- * Procedimeno
+ * Procedimento
  * Incrementa um valor numa variável
  * 
  * \param v
