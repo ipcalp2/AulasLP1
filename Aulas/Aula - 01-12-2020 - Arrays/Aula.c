@@ -23,7 +23,7 @@ int main(void) {
 	//tipo nome[tamanho]
 	int valores[MAX];		//declarar um array de 5 posições!
 	float valores1[MAX * 2];	//posições: MAX; última=MAx-1; primeira=0
-
+	//printf("Tamanho do Array: %d", sizeof(valores));
 	int notas[MAX] = { 12,13,7,2,12 };
 	char car[50] = { 'a','b','c','\0' };
 
