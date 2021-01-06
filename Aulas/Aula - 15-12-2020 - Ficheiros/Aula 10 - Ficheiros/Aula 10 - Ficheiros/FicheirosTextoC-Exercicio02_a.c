@@ -20,7 +20,7 @@ void listarInscricoes(char *nomeFicheiro) ;
 
 
 // função principal
-int main3() {
+int main4() {
     setlocale(LC_ALL, "Portuguese");
 	// declaração e inicialização de variáveis
 	char op;

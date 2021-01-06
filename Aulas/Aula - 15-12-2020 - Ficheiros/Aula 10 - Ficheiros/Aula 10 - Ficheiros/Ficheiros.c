@@ -30,7 +30,7 @@ int inversa(char *txtIn, char *txtOut);
 //-------------------------------------------------------------------------
 
 // função principal
-int main1() {
+int main3() {
 	setlocale(LC_ALL, "Portuguese");
 
 	// declaração e inicialização de variáveis
