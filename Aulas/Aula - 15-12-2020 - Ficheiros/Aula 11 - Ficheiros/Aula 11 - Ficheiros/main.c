@@ -20,13 +20,15 @@ int main() {
              case '2': listarInscricoes(nomeFicheiro);
                        break;
             case '3':  listarUmaInscricao(nomeFicheiro);
-                       break;
-            case '4':  // Sair: nao faz nada
-                       break;
+                break;            
+            case '4': LerDados("Dados.txt");                      
+                break;
+            case '5':  // Sair: nao faz nada
+                break;
             default: printf("opção desconhecida!\n");
                       break;
         }
-    } while(op != '4');
+    } while(op != '5');
 
 	return 0;
 }

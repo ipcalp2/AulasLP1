@@ -155,3 +155,40 @@ int calcularIdade(int dia, int mes, int ano) {
     }
     return resultado;
 }
+
+
+#pragma region JESSICA
+typedef struct Linha {
+    int numero;
+    char d1[12];
+    char d2[12];
+    int temp;
+    int codigo;
+    char estado[100];
+    char tipo[100];
+}Linha ;
+
+void LerDados(char* nomeFicheiro) {
+    FILE* af; 
+
+    af = fopen("c:\\temp\\Dados.txt", "r");
+
+    if (af == NULL)
+        printf("Erro na abertura do ficheiro %s !\n", nomeFicheiro);
+    else {
+        Linha aux;
+
+        while (fscanf(af, "%d;%[^;];%[^;];%d;%[^;];%[^\n] ", &aux.numero, &aux.d1[0], aux.d2, &aux.codigo, aux.estado, aux.tipo) != NULL) {
+            if (aux.estado[strlen(aux.estado) - 1] == '\n') aux.estado[strlen(aux.estado) - 1] = '\0'; // limpar \n
+            if (aux.tipo[strlen(aux.tipo) - 1]=='\n') aux.tipo[strlen(aux.tipo) - 1] = '\0';
+            printf("%s\n", aux.estado);
+            printf("%s\n", aux.tipo);
+        }
+    }
+}
+
+//fgets()
+//strtok()
+
+#pragma endregion
+
